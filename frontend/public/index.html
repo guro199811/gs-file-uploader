@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Uploader</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>File Uploader</h1>
-    <div class="upload-form">
-        <form id="uploadForm">
-            <input type="file" id="fileInput" name="file">
-            <button type="submit">Upload</button>
-        </form>
-        <div id="status"></div>
+    <div class="container">
+        <div class="upload-section">
+            <h1>Guros File Uploader</h1>
+            <div class="upload-zone" id="dropZone">
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" name="file">
+                    <p>Drag & drop your files here or click to select</p>
+                    <button type="submit" class="btn">Upload File</button>
+                </form>
+            </div>
+            <div id="status"></div>
+            <div class="file-list" id="fileList"></div>
+        </div>
     </div>
-
-    <script></script>
+    <script src="file_handler.js"></script>
 </body>
 </html>
